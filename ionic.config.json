@@ -1,0 +1,7 @@
+{
+  "name": "edidebs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
