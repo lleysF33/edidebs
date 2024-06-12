@@ -157,10 +157,96 @@
       <img src="../../assets/images/cliente.webp" alt="" />
     </ion-card>
     <ion-card class="financial">
-      <ion-card-subtitle>L'ACTUALITE FINANCIERE</ion-card-subtitle>
+      <ion-card-subtitle class="ion-padding-start ion-padding-top"
+        >L'ACTUALITE FINANCIERE</ion-card-subtitle
+      >
+      <img src="../../assets/images/money.webp" alt="" />
       <ion-card-title class="bluecard"
         >Suivez l’actualité financiére dans le monde entier</ion-card-title
       >
     </ion-card>
+    <ion-card>
+      <ion-card-title>Simplifions la complexité</ion-card-title>
+      <img src="../../assets/images/world.webp" alt="" />
+      <ion-button
+        color="warning"
+        [routerLink]="['/log']"
+        routerLinkActive="router-link-active"
+      >
+        S'abonner
+        <ion-icon name="arrow-forward-circle-outline"> </ion-icon>
+      </ion-button>
+    </ion-card>
   </ion-content>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title>
+        <ion-grid fixed>
+          <ion-row>
+            <ion-col size="2">
+              <ion-icon src="../../assets/icon/logo.svg" name="logo">
+              </ion-icon>
+            </ion-col>
+            <ion-col size="3">
+              <h6>Menu</h6>
+              <ion-button
+                fill="clear"
+                size="small"
+                class="ion-text-capitalize ion-no-padding"
+                [routerLink]="['/']"
+                routerLinkActive="router-link-active"
+              >
+                Acceuil
+              </ion-button>
+              <br />
+              <ion-button
+                fill="clear"
+                size="small"
+                class="ion-text-capitalize ion-no-padding"
+                [routerLink]="['/services']"
+                routerLinkActive="router-link-active"
+              >
+                Services
+              </ion-button>
+              <br />
+              <ion-button
+                fill="clear"
+                size="small"
+                class="ion-text-capitalize ion-no-padding"
+                [routerLink]="['/pricing']"
+                routerLinkActive="router-link-active"
+              >
+                Tarifs
+              </ion-button>
+            </ion-col>
+            <ion-col size="4">
+              <h6>Informations</h6>
+              <ion-button
+                fill="clear"
+                size="small"
+                class="ion-text-capitalize ion-no-padding"
+                [routerLink]="['/rgpd']"
+                routerLinkActive="router-link-active"
+              >
+                Mentions Légales / RGPD
+              </ion-button>
+              <br />
+              <ion-button
+                fill="clear"
+                size="small"
+                class="ion-text-capitalize ion-no-padding"
+                [routerLink]="['/contact']"
+                routerLinkActive="router-link-active"
+              >
+                Contact
+              </ion-button>
+            </ion-col>
+            <ion-col size="3">
+              <h6>Social</h6>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>
 </div>

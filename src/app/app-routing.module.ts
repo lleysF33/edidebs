@@ -31,6 +31,14 @@ const routes: Routes = [
     path: 'quotations',
     loadChildren: () => import('./quotations/quotations.module').then( m => m.QuotationsPageModule)
   },
+  {
+    path: 'services',
+    loadChildren: () => import('./services/services.module').then( m => m.ServicesPageModule)
+  },
+  {
+    path: 'rgpd',
+    loadChildren: () => import('./rgpd/rgpd.module').then( m => m.RgpdPageModule)
+  },
  
 ];
 
