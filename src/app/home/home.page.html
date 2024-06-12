@@ -1,20 +1,166 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-menu side="end" contentId="main-content">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-icon src="../../assets/icon/logo.svg" name="logo"></ion-icon>
+      Edidebs Bank
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding_1">
+    <ion-button
+      expand="block"
+      fill="clear"
+      shape="round"
+      [routerLink]="['/log']"
+      routerLinkActive="router-link-active"
+    >
+      Connexion/Inscription
+    </ion-button>
+
+    <ion-button
+      expand="block"
+      fill="clear"
+      shape="round"
+      [routerLink]="['/pricing']"
+      routerLinkActive="router-link-active"
+    >
+      Tarifs
+    </ion-button>
+
+    <ion-button
+      expand="block"
+      fill="clear"
+      shape="round"
+      [routerLink]="['/feedback']"
+      routerLinkActive="router-link-active"
+    >
+      Avis clients
+    </ion-button>
+
+    <ion-button
+      expand="block"
+      fill="clear"
+      shape="round"
+      [routerLink]="['/quotations']"
+      routerLinkActive="router-link-active"
+    >
+      Les cotations
+    </ion-button>
+
+    <ion-button
+      expand="block"
+      fill="outline"
+      shape="round"
+      [routerLink]="['/contact']"
+      routerLinkActive="router-link-active"
+      ><ion-icon name="person-circle-outline"></ion-icon>
+      Contactez-nous
+    </ion-button>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-icon src="../../assets/icon/logo.svg" name="logo"></ion-icon>
+      <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  <ion-content class="info">
+    <img src="../../assets/images/epargne.webp" alt="dessin" />
+    <h1>Renforcez votre avenir financier avec Eiffel Conseils</h1>
+    <p>
+      Nous vous accompagnons dans toutes les étapes de votre vie , dans tous vos
+      projets, quelque soit votre besoin.
+    </p>
+
+    <ion-button
+      color="warning"
+      [routerLink]="['/log']"
+      routerLinkActive="router-link-active"
+    >
+      S'abonner
+      <ion-icon name="arrow-forward-circle-outline"> </ion-icon>
+    </ion-button>
+
+    <ion-card>
+      <img src="../../assets/images/bureau.webp" alt="bureau" />
+      <ion-card-header>
+        <ion-card-title
+          >Fournir des conseils personnalisés et pertinents</ion-card-title
+        >
+        <ion-card-subtitle>NOS ENGAGEMENTS</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        Nous nous engageons à favoriser le bien-être financier de la prochaine
+        génération en les encourageant à prendre les décisions pertinentes.
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="financial">
+      <ion-card-subtitle class="ion-padding-start ion-padding-top">
+        NOS ENGAGEMENTS
+      </ion-card-subtitle>
+      <ion-card-title class="bluecard">
+        Planning financier sur le long terme
+      </ion-card-title>
+      <p>fgnbgdnb</p>
+      <ion-card>
+        <ion-card-content>
+          <img
+            src="../../assets/images/argent fleurit.webp"
+            alt="plante argent"
+          />
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-content>
+          <ion-icon src="../../assets/icon/dollar"></ion-icon>
+          <ion-card-title>Argent au quotidien</ion-card-title>
+          <p>Nous vous accompagnons dans la gestion de votre budget.</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-content>
+          <ion-icon src="../../assets/icon/cubes.svg"></ion-icon>
+          <ion-card-title>Planning Financier</ion-card-title>
+          <p>
+            Ces plans peuvent comprendre des stratégies de placement, des plans
+            d’épargne, etc.
+          </p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-content>
+          <ion-icon src="../../assets/icon/case.svg"></ion-icon>
+          <ion-card-title>Partenaire Stratégique</ion-card-title>
+          <p>
+            La gestion en continue qui vous fournie les éléments de gestion de
+            votre épargne.
+          </p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-content>
+          <ion-icon src="../../assets/icon/flash.svg"></ion-icon>
+          <ion-card-title>Gestion du Risque</ion-card-title>
+          <p>Notre expertise s’adapte à votre profil d’épargnant.</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-card>
+    <ion-card class="paragraf">
+      <ion-card-subtitle>NOTRE STRATEGIE</ion-card-subtitle>
+      <ion-card-title
+        >Boostez votre épargne en fonstion de vos possibilités.</ion-card-title
+      >
+      <img src="../../assets/images/cliente.webp" alt="" />
+    </ion-card>
+    <ion-card class="financial">
+      <ion-card-subtitle>L'ACTUALITE FINANCIERE</ion-card-subtitle>
+      <ion-card-title class="bluecard"
+        >Suivez l’actualité financiére dans le monde entier</ion-card-title
+      >
+    </ion-card>
+  </ion-content>
+</div>

@@ -11,6 +11,27 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
+  },
+  {
+    path: 'log',
+    loadChildren: () => import('./log/log.module').then( m => m.LogPageModule)
+  },
+  {
+    path: 'pricing',
+    loadChildren: () => import('./pricing/pricing.module').then( m => m.PricingPageModule)
+  },
+  {
+    path: 'feedback',
+    loadChildren: () => import('./feedback/feedback.module').then( m => m.FeedbackPageModule)
+  },
+  {
+    path: 'quotations',
+    loadChildren: () => import('./quotations/quotations.module').then( m => m.QuotationsPageModule)
+  },
+ 
 ];
 
 @NgModule({
